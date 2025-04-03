@@ -1,0 +1,31 @@
+{
+   "manifest_version": 3,
+   "name": "Gartic Brush",
+   "description": "Enhance Gartic drawing: digital tablet brush pressure support!",
+   "version": "0.0.1",
+   "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+   },
+   "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback"
+   ],
+   "host_permissions": [
+      "*://*.gartic.io/room/*",
+      "*://*.gartic.io/_next/*"
+   ],
+   "web_accessible_resources": [{
+     "resources": [ "*.js", "*.css", "*.png", "*.woff2" ],
+     "matches": [ "*://*/*" ]
+   }],
+   "declarative_net_request": {
+      "rule_resources": [
+         {
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "rules.json"
+         }
+      ]
+   }
+}
