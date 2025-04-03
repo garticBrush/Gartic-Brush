@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/resource/room.js" }
+    },
+    "condition": {
+      "regexFilter": "^https://gartic.io/_next/static/chunks/pages/room-[a-zA-Z0-9_-]*.js",
+      "resourceTypes": [ "script" ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/resource/icomoon.woff2" }
+    },
+    "condition": {
+      "regexFilter": "^https://gartic.io/static/fonts/icomoon.woff2(\\?.*)?",
+      "resourceTypes": [ "font" ]
+    }
+  }
+]
